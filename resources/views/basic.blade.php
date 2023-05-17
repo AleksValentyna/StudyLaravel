@@ -6,7 +6,7 @@
       <title>Our first project</title>
 </head>
 <body>
-   <h2>Basic template</h2>
+   <h2>Basic  test template</h2>
    @yield('content')
    
 </body>

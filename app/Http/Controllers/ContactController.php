@@ -14,6 +14,10 @@ class ContactController extends Controller
 
 
    public function submit(Request $request){
+      $request->validate([
+         'name' => 'required|max:10|min:2',
+         'email' => 'required',
+     ]);
       // dd($request);
       Staff::create($request->all());
       return redirect()->back();
